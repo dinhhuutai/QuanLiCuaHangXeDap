@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{360EA811-6D21-4EFA-AF55-67EFE32CE375}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quanlicuahangxedap</RootNamespace>
+    <AssemblyName>Quanlicuahangxedap</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCoPhieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCoPhieu.Designer.cs">
+      <DependentUpon>frmCoPhieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCuaHang.Designer.cs">
+      <DependentUpon>frmCuaHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangKi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangKi.Designer.cs">
+      <DependentUpon>frmDangKi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatHang.Designer.cs">
+      <DependentUpon>frmDatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDonDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDonDatHang.Designer.cs">
+      <DependentUpon>frmDonDatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhanHieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanHieu.Designer.cs">
+      <DependentUpon>frmNhanHieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSanPham.Designer.cs">
+      <DependentUpon>frmSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTheLoai.Designer.cs">
+      <DependentUpon>frmTheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrangChu.Designer.cs">
+      <DependentUpon>frmTrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCoPhieu.resx">
+      <DependentUpon>frmCoPhieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCuaHang.resx">
+      <DependentUpon>frmCuaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangKi.resx">
+      <DependentUpon>frmDangKi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatHang.resx">
+      <DependentUpon>frmDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDonDatHang.resx">
+      <DependentUpon>frmDonDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhanHieu.resx">
+      <DependentUpon>frmNhanHieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSanPham.resx">
+      <DependentUpon>frmSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTheLoai.resx">
+      <DependentUpon>frmTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrangChu.resx">
+      <DependentUpon>frmTrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BLOG-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner-vinbike.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\process_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-quan-ly-ke-hoach-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160317icon_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-button-user-interface-exit-logo-area-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-user-login-icon-305-thumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-2925826_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-blue-blue-background-sign-in-attendance-wall-image_22083.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CSS-Particles.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xe-dap-the-thao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-login-scalable-vector-graphics-emai-5be7376911c6b4.4735764415418796570728.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xe-dap-the-thao1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-login-user-account-icon-design-personage-miscellaneous-text-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-login-user-account-icon-design-personage-miscellaneous-text-thumbnail1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\719514935f878a61317cfb3053661eb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-images-for-login-form-8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-login-user-profile-5b383c44697cb0.6228623815304121004321.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-login-user-profile-5b383c44697cb0.62286238153041210043211.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-login-scalable-vector-graphics-emai-5be7376911c6b4.47357644154187965707281.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-login-user-profile-5b383c44697cb0.62286238153041210043212.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-user-login-icon-305-thumb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-user-login-icon-305-thumb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74ab48240e34df5e05a398e997a42b0e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-login-png-transparent-6-Transparent-Images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google+icon-1320192365157611834.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\github-icon-white-25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door-login-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door-login-icon11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-cong-nghe-dep_034236048.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CSS-Particles1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiles-shapes-gc84554b4a_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8eff5b93f842fb68cade70c1245c05bc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024px-Search_Icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024px-Search_Icon.svg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024px-Search_Icon.svg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-2-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-2-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-bao-hanh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-download-font-awesome-computer-icons-installation-storage-5ac4c192ef51a0.7219551815228440509803.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xoa-hinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error-icon-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Download_alt_font_awesome.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090618_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xe_dap3-3-0954365.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090618_21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report-300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-list-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-list-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-list-67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-list-64 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-+-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-+-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-list-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-list-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-+-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xe_dap3-3-09543651.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tranh-to-mau-xe-dap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinh-ve-chua-to-mau-xe-dap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\web.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bike-icon-1-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-phu-kien-xe-dap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vector-bicycle-icon-png-image_875327.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bike-icon-1-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cycling-race-vector-logo-design-bicycle-shop-logo-design-template-image_322963.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024px-Search_Icon.svg3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8234.jpg_wh860.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\most-expensive-cars_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8234.jpg_wh8601.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\most-expensive-cars_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-2008-mazda-furai-concept.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-243.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tr49_GSAD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20211004174030-1220210923175901-12thi-truong-chung-khoan-vnb-15547978342231222599554.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo1611192860741-1611192862141962218577.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
